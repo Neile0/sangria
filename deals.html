@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sangria Hamilton - Tapas and Cava Bar</title>
+        <link rel="stylesheet" href="/main.css">
+        <link rel="icon" href="/images/favicon.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <header class="navbar-cont">
+        <nav class="navbar is-accent-one">
+            <div class="nav-col nav-left">
+                <a href="/menus/menus.html" class="is-spaced is-semibold">Menus</a>
+                <a href="/gallery.html" class="is-spaced is-semibold">Gallery</a>
+            </div>
+            <div class="nav-col nav-center">
+                <a href="/index.html"><img src="/images/sangria.svg" alt="Sangria Flavours of Spain" class="nav-logo"></a>
+            </div>
+            <div class="nav-col nav-right">
+                <a href="/deals.html" class="is-spaced is-semibold">Deals</a>
+                <a href="/#find" class="is-spaced is-semibold">Contact</a>
+                <div class="nav-socials socials">
+                    <a href="https://www.facebook.com/sangria.hamilton.7" class="fa fa-facebook is-dark is-accent-one"></a>
+                    <a href="https://www.instagram.com/spanishrestaurantsangria/?hl=en" class="fa fa-instagram is-dark"></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-mobile is-primary">
+            <ul>
+                <li><a href="/menus/menus.html" class="is-spaced is-uppercase is-semibold">Menus</a></li>
+                <li><a href="/gallery.html" class="is-spaced is-uppercase is-semibold">Gallery</a></li>
+                <li><a href="/deals.html" class="is-spaced is-uppercase is-semibold">Deals</a></li>
+                <li><a href="/#find" class="is-spaced is-uppercase is-semibold">Contact</a></li>
+                <li><div class="nav-socials socials">
+                    <a href="https://www.facebook.com/sangria.hamilton.7" class="fa fa-facebook is-dark is-accent-one"></a>
+                    <a href="https://www.instagram.com/spanishrestaurantsangria/?hl=en" class="fa fa-instagram is-dark"></a>
+                </div></li>
+            </ul>
+        </nav>
+        <div class="nav-mobile-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <div class="nav-offset"></div>
+
+    <section class="header">
+        <h1 class="is-spaced is-uppercase">Deals</h1>        
+    </section>
+    <section id="deals">
+        <div class="content-container is-container-color deals-container">
+            <img src="/images/deals.png" alt="">
+            <hr class="deals-divider is-accent-one">
+            <div class="deal">
+                <div class="deal-title">
+                    <h1 class="is-uppercase is-spaced is-semibold">Sunday Spanish Roast</h1>
+                </div>
+                <div class="deal-description">
+                    <p>Enjoy a two course Spanish Roast and a bottle of wine for just £25 for two people.</p>
+                </div>
+                <div class="deal-price">
+                    <p class="is-uppercase is-spaced is-semibold">£25 / 2ppl</p>
+                </div>
+            </div>
+            <hr class="deals-divider is-accent-one">
+            <div class="deal">
+                <div class="deal-title">
+                    <h1 class="is-uppercase is-spaced is-semibold">Other Deals</h1>
+                </div>
+                <div class="deal-description">
+                    <p>For other exclusive deals, try searching for us on Groupon and Wowcher</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer class="is-primary">
+        <div class="footer-container content-container">
+        <div class="footer-col footer-col-1">
+            <ul>
+                <li><a href="/menus/menus.html" class="is-accent-one is-uppercase is-spaced is-semibold">Menu</a></li>
+                <li><a href="/menus/tapas.pdf" class="is-uppercase is-spaced is-semibold">Tapas</a></li>
+                <li><a href="/menus/drinks.pdf" class="is-uppercase is-spaced is-semibold">Drinks</a></li>
+                <li><a href="/menus/takeaway.pdf" class="is-uppercase is-spaced is-semibold">Takeaway</a></li>
+                <li><a href="/deals.html" class="is-uppercase is-spaced is-semibold">Deals</a></li>
+        </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+            <p class="is-accent-one is-uppercase is-spaced is-semibold">Follow</p>
+            <div class="footer-socials socials">
+                <a href="" class="fa fa-facebook is-dark is-accent-one"></a>
+                <a href="" class="fa fa-instagram is-dark"></a>
+            </div>
+        </div>
+        <div class="footer-col footer-col-3">
+            <p class="is-accent-one is-uppercase is-spaced is-semibold">Opening Hours</p>
+            <p class="is-uppercase is-spaced is-semibold">Mon<br>Closed<br>Tue - Sun<br>11:00 - 00:00</p>
+        </div>
+        </div>
+    </footer>
+    
+
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+    <script>
+        $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        $('.hero-overlay').css("opacity", 0.3 + $(window).scrollTop() / 1000) 
+    })
+    $(".nav-mobile-toggle").on("click",function(e){
+        if ($(".nav-mobile").css("display") == "none"){
+            $(".nav-mobile").css("display","flex");
+        }
+        else {
+            $(".nav-mobile").css("display","none");
+        }
+    })
+})
+
+
+    </script>
+
+</body>
+</html>
